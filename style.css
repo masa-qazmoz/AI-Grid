@@ -1,0 +1,163 @@
+body, div, label, input, select, button {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif; 
+    background-color: LavenderBlush; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 60;
+    margin-top: 0;
+    padding: 0;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lucida Handwriting', cursive; 
+    color: black;
+    
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 30px;
+    font-family: Georgia, serif; 
+    color: black;
+    margin-right: 10px;
+    
+}
+
+
+input[type=number], button, select {
+    padding: 10px; 
+}
+
+
+
+.input-row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+.buttons-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: LightBlue;
+    color: black;
+    font-family: Georgia, monospace;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button:hover {
+    background-color: #add8e6; 
+}
+select{
+    font-size: 18px;
+    font-family: Georgia;
+    background-color: LightBlue;
+    color: black;
+}
+
+#gridContainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    gap: 5px; 
+    padding-left: 250px; 
+
+}
+  
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: inline-block; 
+    box-sizing: border-box;
+}
+  
+  
+
+.source {
+    background-color: green; 
+}
+  
+  .target {
+    background-color: maroon;
+}
+  
+  .blocked {
+    background-color: gray; 
+}
+
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.center-container > div, .center-container > button {
+    margin: 10px 0; 
+}
+
+
+#findPathBtn {
+    display: block; 
+    margin-bottom: -5px; 
+
+    
+}
+
+.path {
+    background-color: greenyellow; 
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin: 10px;
+    vertical-align: middle;
+}
+  
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    #generateGrid, #findPathBtn {
+        width: 100%; 
+        margin-top: 10px;
+    }
+}
